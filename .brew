@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install other useful binaries
+brew install git
+brew install lynx
+brew install node
+brew install pigz
+
+# Install basic bioinformatics tools
+brew tap homebrew/science
+brew install bowtie2
+brew install bwa
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+    brew cask install "${@}" 2> /dev/null
+}
+
+installcask adium
+installcask quicksilver
+installcask skype
+installcask dropbox
+installcask google-chrome
+installcask iterm2
+installcask macvim
+installcask miro-video-converter
+installcask the-unarchiver
+installcask virtualbox
+installcask vlc
+
+# Remove outdated versions from the cellar
+brew cleanup
