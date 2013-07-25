@@ -109,6 +109,9 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+" Define gui font
+set guifont=Inconsolata-dz\ for\ Powerline:h13
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -371,3 +374,20 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+
+"""""""""""""""""""
+" Vundle, plugins "
+"""""""""""""""""""
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+filetype plugin indent on
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/nerdtree'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'jmcantrell/vim-virtualenv'
+
+" Lang-specific Bundles
+Bundle 'klen/python-mode'
+ 
