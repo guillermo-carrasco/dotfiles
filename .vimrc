@@ -60,7 +60,7 @@ set ignorecase
 set smartcase
 
 " Highlight search results
-set hlsearch
+" set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch 
@@ -73,6 +73,7 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch 
+
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -82,8 +83,8 @@ set novisualbell
 set t_vb=
 set tm=500
 
-" Show line numbers
-" set nu
+" Don't show line numbers
+set nonu
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,16 +93,19 @@ set tm=500
 " Enable syntax highlighting
 syntax enable 
 
-colorscheme desert
+colorscheme elflord
 set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
-    set guioptions+=e
+   "set guioptions+=e
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+
+"Don't want code folding
+set nofoldenable
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -145,7 +149,7 @@ set wrap "Wrap lines
 
 " Set right vertical rule (red background)
 if exists('+colorcolumn')
-      highlight ColorColumn ctermbg=7
+      highlight ColorColumn ctermbg=1
       set colorcolumn=80
   else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
@@ -223,7 +227,7 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ \ Percent:\ %P
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -374,6 +378,13 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Package specific settings 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" You Complete me
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+" Map NerdTree to <F2>(+fn for Macs)
+map <F2> :NERDTreeToggle<CR>
 
 """""""""""""""""""
 " Vundle, plugins "
@@ -383,11 +394,20 @@ call vundle#rc()
 
 filetype plugin indent on
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'kien/ctrlp.vim'
 
-" Lang-specific Bundles
-Bundle 'klen/python-mode'
- 
+"""""""""""""""""""""""""""""
+" Package specific settings "
+"""""""""""""""""""""""""""""
+
+" Change the default mapping and the default command to invoke CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" When invoked, unless a starting directory is specified, CtrlP will set its 
+" local working directory according to this variable
+let g:ctrlp_working_path_mode = 'ra'
+
+" Eclude some files from the search
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
