@@ -93,7 +93,8 @@ set nonu
 " Enable syntax highlighting
 syntax enable 
 
-colorscheme elflord
+let g:solarized_termcolors=256
+colorscheme solarized
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -396,6 +397,7 @@ filetype plugin indent on
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'kien/ctrlp.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 """""""""""""""""""""""""""""
 " Package specific settings "
