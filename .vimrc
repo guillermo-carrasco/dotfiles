@@ -398,6 +398,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Townk/vim-autoclose'
 
 """""""""""""""""""""""""""""
 " Package specific settings "
