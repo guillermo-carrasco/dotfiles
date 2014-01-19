@@ -93,10 +93,10 @@ set nonu
 " Enable syntax highlighting
 syntax enable 
 
-let g:solarized_termcolors=256
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-colorscheme solarized
+let g:distinguished_termcolors=256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+colorscheme distinguished
 set background=dark
 
 "Don't want code folding
@@ -360,4 +360,5 @@ filetype plugin indent on
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/vim-distinguished'
 
