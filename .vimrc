@@ -60,7 +60,7 @@ set ignorecase
 set smartcase
 
 " Highlight search results
-set hlsearch
+" set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch 
@@ -84,7 +84,7 @@ set t_vb=
 set tm=500
 
 " Don't show line numbers
-set nonu
+set nu
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,9 +94,9 @@ set nonu
 syntax enable 
 
 let g:distinguished_termcolors=256
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
-colorscheme distinguished
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+colorscheme solarized
 set background=dark
 
 "Don't want code folding
@@ -141,8 +141,9 @@ set wrap "Wrap lines
 
 " Set right vertical rule (red background)
 if exists('+colorcolumn')
-      highlight ColorColumn ctermbg=1
-      set colorcolumn=80
+      let &colorcolumn=join(range(81,999),",")
+      highlight ColorColumn ctermbg=235 guibg=#2c2d27
+      let &colorcolumn="80,".join(range(120,999),",")
 else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
@@ -361,4 +362,4 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
-
+Bundle 'scrooloose/nerdtree'
