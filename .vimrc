@@ -141,9 +141,8 @@ set wrap "Wrap lines
 
 " Set right vertical rule (red background)
 if exists('+colorcolumn')
-      let &colorcolumn=join(range(81,999),",")
+      let &colorcolumn="80"
       highlight ColorColumn ctermbg=235 guibg=#2c2d27
-      let &colorcolumn="80,".join(range(120,999),",")
 else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
@@ -363,3 +362,10 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
+
+""""""""""""""""""""""""""""""""""""""""
+" => Options that I may use some times "
+" """"""""""""""""""""""""""""""""""""""
+
+" Spell checking
+" set spell spelllang=en_us
