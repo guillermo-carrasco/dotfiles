@@ -94,9 +94,8 @@ set tm=500
 syntax enable 
 
 let g:distinguished_termcolors=256
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
-"colorscheme distinguished
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 colorscheme solarized
 set background=dark
 
@@ -142,8 +141,8 @@ set wrap "Wrap lines
 
 " Set right vertical rule (red background)
 if exists('+colorcolumn')
-      highlight ColorColumn ctermbg=1
-      set colorcolumn=80
+      let &colorcolumn="80"
+      highlight ColorColumn ctermbg=235 guibg=#2c2d27
 else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
@@ -362,6 +361,11 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
-Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
+
+""""""""""""""""""""""""""""""""""""""""
+" => Options that I may use some times "
+" """"""""""""""""""""""""""""""""""""""
+
+" Spell checking
+" set spell spelllang=en_us
