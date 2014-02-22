@@ -84,7 +84,7 @@ set t_vb=
 set tm=500
 
 " Don't show line numbers
-set nonu
+" set nonu
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -96,7 +96,8 @@ syntax enable
 let g:distinguished_termcolors=256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
-colorscheme distinguished
+"colorscheme distinguished
+colorscheme solarized
 set background=dark
 
 "Don't want code folding
@@ -361,4 +362,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
-
+Bundle 'tomtom/tcomment_vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
