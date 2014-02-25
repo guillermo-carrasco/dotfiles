@@ -362,6 +362,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
 
 """"""""""""""""""""""""""""""""""""""""
 " => Options that I may use some times "
