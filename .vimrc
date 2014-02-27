@@ -102,7 +102,7 @@ let g:distinguished_termcolors=256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
-set background=light
+set background=dark
 
 "Don't want code folding
 set nofoldenable
@@ -151,6 +151,13 @@ if exists('+colorcolumn')
 else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+"And now, specific settings for concrete filetypes
+"
+"Web development requires usually only 2 spaces (it is too nested...)
+autocmd FileType javascript set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
+autocmd FileType html set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
+autocmd FileType css set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -328,7 +335,6 @@ map <F2> :NERDTreeToggle<CR>
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-filetype plugin indent on
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
