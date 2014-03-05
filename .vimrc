@@ -98,10 +98,10 @@ map <leader>ll :set nu!<cr>
 " Enable syntax highlighting
 syntax enable 
 
-let g:distinguished_termcolors=256
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-colorscheme solarized
+"let g:distinguished_termcolors=256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+colorscheme blazer
 set background=dark
 
 "Don't want code folding
@@ -260,6 +260,9 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 
 map <leader>pp :setlocal paste!<cr>
+
+" Toggle highlight search
+map <leader>h :set hlsearch!<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
