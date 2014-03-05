@@ -157,6 +157,7 @@ endif
 "Web development requires usually only 2 spaces (it is too nested...)
 autocmd FileType javascript set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
 autocmd FileType html set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
+autocmd FileType htmldjango set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
 autocmd FileType css set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2 | set autoindent
 
 
