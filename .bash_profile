@@ -58,3 +58,7 @@ export LANG=en_US.UTF-8
 export PATH="/Users/guillem/anaconda/bin:$PATH"
 source activate master
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
