@@ -48,7 +48,7 @@ alias gpum='git pull upstream master'
 
 
 #Vim runtime
-export VIMRUNTIME=/usr/local/Cellar/vim/7.4.052/share/vim/vim74/
+export VIMRUNTIME=/usr/local/Cellar/vim/7.4.273/share/vim/vim74/
 
 #Locale stuff
 export LC_ALL=en_US.UTF-8
