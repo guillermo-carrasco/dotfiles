@@ -11,18 +11,18 @@ source ~/repos/dotfiles/iterm2_helpers.sh
 
 #Servers
 alias uppmax='ssh guilc@kalkyl.uppmax.uu.se'
-alias milou='tab_maroon; title \"milou cluster\"; ssh guilc@milou.uppmax.uu.se'
-alias b5='tab_blue; title \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se'
-alias biologin='tab_maroon; title \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se'
+alias milou='tab_maroon \"milou cluster\"; ssh guilc@milou.uppmax.uu.se'
+alias b5='tab_blue \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se'
+alias biologin='tab_maroon \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se'
 alias galerina='ssh guillermo.carrasco@galerina.biotech.kth.se'
 alias comicbookguy='ssh guillermo.carrasco@comicbookguy.scilifelab.se'
-alias genologics='tab_green; title \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se'
-alias genologics-stage='tab_green; title \"Genologics (stage)\"; ssh guillermo.carrasco@genologics-stage.scilifelab.se'
-alias tools='tab_dark_salmon; title \"Tools\"; ssh guillermo.carrasco@tools.scilifelab.se -p 5912'
+alias genologics='tab_green \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se'
+alias genologics-stage='tab_green \"Genologics (stage)\"; ssh guillermo.carrasco@genologics-stage.scilifelab.se'
+alias tools='tab_dark_salmon \"Tools\"; ssh guillermo.carrasco@tools.scilifelab.se -p 5912'
 alias tools-dev="tab_dark_salmon; title \"Tools (dev)\"; ssh guillermo.carrasco@tools-dev.scilifelab.se"
-alias nas1="tab_gold; title \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
-alias nas2="tab_gold; title \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
-alias nas3="tab_gold; title \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
+alias nas1="tab_gold \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
+alias nas2="tab_gold \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
+alias nas3="tab_gold \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
 
 
 ##########################
