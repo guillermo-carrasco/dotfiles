@@ -13,6 +13,7 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 alias milou="tab_maroon; title \"milou cluster\"; ssh guilc@milou.uppmax.uu.se"
 alias b5="tab_blue; title \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se"
 alias biologin="tab_maroon \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se"
+alias nestor-b="tab_maroon \"Nestor Cluster\"; ssh guilc@nestor1.uppmax.uu.se"
 alias galerina="ssh guillermo.carrasco@galerina.biotech.kth.se"
 alias comicbookguy="ssh guillermo.carrasco@comicbookguy.scilifelab.se"
 alias genologics="tab_green; title \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se"
@@ -47,7 +48,7 @@ alias gpum='git pull upstream master'
 
 
 #Vim runtime
-export VIMRUNTIME=/usr/local/Cellar/vim/7.4.273/share/vim/vim74/
+export VIMRUNTIME=/usr/local/Cellar/vim/7.4.335/share/vim/vim74/
 
 #Locale stuff
 export LC_ALL=en_US.UTF-8
