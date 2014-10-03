@@ -1,6 +1,5 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PS1="\h: \W -> "
 
 # Source iterm2 helpers
 source ~/repos_and_code/dotfiles/iterm2_helpers.sh
@@ -40,6 +39,7 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
+# Prompt like: (virtualenv) hh:mm:ss cwd (git_branch) ~>
 PS1="$GREEN\t $NO_COLOUR\w$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
 
 alias gpom='git pull origin master'
