@@ -56,7 +56,7 @@ export LANG=en_US.UTF-8
 
 #added by Anaconda 1.9.1 installer
 export PATH="/Users/guillem/anaconda/bin:$PATH"
-source activate master
+source activate master &> /dev/null
 
 # Git CLI autocompletion
 if [ -f ~/.git-completion.bash ]; then
