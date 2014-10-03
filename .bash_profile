@@ -10,19 +10,19 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 ########################
 
 #Servers
-alias milou="tab_maroon; title \"milou cluster\"; ssh guilc@milou.uppmax.uu.se"
-alias b5="tab_blue; title \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se"
-alias biologin="tab_maroon \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se"
-alias nestor-b="tab_maroon \"Nestor Cluster\"; ssh guilc@nestor1.uppmax.uu.se"
+alias milou="title \"milou cluster\"; ssh guilc@milou.uppmax.uu.se"
+alias b5="title \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se"
+alias biologin="title \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se"
+alias nestor-b="title \"Nestor Cluster\"; ssh guilc@nestor1.uppmax.uu.se"
 alias galerina="ssh guillermo.carrasco@galerina.biotech.kth.se"
 alias comicbookguy="ssh guillermo.carrasco@comicbookguy.scilifelab.se"
-alias genologics="tab_green; title \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se"
-alias genologics-stage="tab_green; title \"Genologics stage\"; ssh guillermo.carrasco@genologics-stage.scilifelab.se"
-alias tools='tab_dark_salmon; title \"Tools\"; ssh guillermo.carrasco@tools.scilifelab.se -p 5912'
-alias tools-dev="tab_dark_salmon; title \"Tools (dev)\"; ssh guillermo.carrasco@tools-dev.scilifelab.se"
-alias nas1="tab_gold; title \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
-alias nas2="tab_gold; title \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
-alias nas3="tab_gold; title \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
+alias genologics="title \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se"
+alias genologics-stage="title \"Genologics stage\"; ssh guillermo.carrasco@genologics-stage.scilifelab.se"
+alias tools='title \"Tools\"; ssh guillermo.carrasco@tools.scilifelab.se -p 5912'
+alias tools-dev="title \"Tools (dev)\"; ssh guillermo.carrasco@tools-dev.scilifelab.se"
+alias nas1="title \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
+alias nas2="title \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
+alias nas3="title \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
 
 
 ##########################
@@ -40,7 +40,7 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
-PS1="$NO_COLOUR\u@\h$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+PS1="$GREEN \t $NO_COLOUR\u@\h$NO_COLOUR: \W$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
 
 alias gpom='git pull origin master'
 alias gPom='git push origin master'
@@ -48,7 +48,7 @@ alias gpum='git pull upstream master'
 
 
 #Vim runtime
-export VIMRUNTIME=/usr/local/Cellar/vim/7.4.335/share/vim/vim74/
+export VIMRUNTIME=/usr/local/Cellar/vim/7.4.273/share/vim/vim74/
 
 #Locale stuff
 export LC_ALL=en_US.UTF-8
@@ -58,6 +58,7 @@ export LANG=en_US.UTF-8
 export PATH="/Users/guillem/anaconda/bin:$PATH"
 source activate master
 
+# Git CLI autocompletion
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
