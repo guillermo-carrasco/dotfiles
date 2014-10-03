@@ -40,7 +40,7 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
-PS1="$GREEN \t $NO_COLOUR\u@\h$NO_COLOUR: \W$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
+PS1="$GREEN\t $NO_COLOUR\u@\h$NO_COLOUR: \W$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
 
 alias gpom='git pull origin master'
 alias gPom='git push origin master'
