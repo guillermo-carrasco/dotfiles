@@ -98,8 +98,7 @@ map <leader>ll :set nu!<cr>
 " Enable syntax highlighting
 syntax enable 
 
-" Bad Wolf https://raw.githubusercontent.com/sjl/badwolf/master/colors/badwolf.vim
-colorscheme badwolf
+colorscheme solarized
 let g:rehash256 = 1
 
 "Don't want code folding
