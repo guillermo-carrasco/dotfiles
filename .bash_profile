@@ -22,6 +22,14 @@ alias tools-dev="title \"Tools (dev)\"; ssh guillermo.carrasco@tools-dev.scilife
 alias nas1="title \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
 alias nas2="title \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
 alias nas3="title \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
+alias nas6="title \"NAS 6\"; ssh guillermo.carrasco@nas-6.scilifelab.se"
+alias nas7="title \"NAS 7\"; ssh guillermo.carrasco@nas-7.scilifelab.se"
+alias nas8="title \"NAS 8\"; ssh guillermo.carrasco@nas-8.scilifelab.se"
+alias nas9="title \"NAS 9\"; ssh guillermo.carrasco@nas-9.scilifelab.se"
+alias clinical1="title \"Clinical NAS 1\"; ssh guillermo.carrasco@clinical-nas-1.scilifelab.se"
+alias clinical2="title \"Clinical NAS 2\"; ssh guillermo.carrasco@clinical-nas-2.scilifelab.se"
+alias preproc1="title \"Peproc 1\"; ssh guillermo.carrasco@preproc1.scilifelab.se"
+alias preproc2="title \"Peproc 2\"; ssh guillermo.carrasco@preproc2.scilifelab.se"
 
 
 ##########################
@@ -89,3 +97,4 @@ extract () {
     echo "'$1' is not a valid file"
   fi
 }
+
