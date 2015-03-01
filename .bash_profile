@@ -48,7 +48,7 @@ GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
 # Prompt like: (virtualenv) hh:mm:ss cwd (git_branch) ~>
-PS1="$GREEN\t $NO_COLOUR\w$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
+PS1=" $GREEN\w$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
 
 alias gpom='git pull origin master'
 alias gPom='git push origin master'
