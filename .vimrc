@@ -98,7 +98,8 @@ map <leader>ll :set nu!<cr>
 " Enable syntax highlighting
 syntax enable 
 
-colorscheme solarized
+set background=dark
+colorscheme grb256
 let g:rehash256 = 1
 
 "Don't want code folding
@@ -338,7 +339,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
