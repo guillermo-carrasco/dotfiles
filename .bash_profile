@@ -5,32 +5,12 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 
 ########################
-## SciLifeLab aliases ##
+## WWCRC aliases ##
 ########################
 
 #Servers
-alias milou="title \"milou cluster\"; ssh guilc@milou.uppmax.uu.se"
-alias b5="title \"b5\"; ssh guillermo.carrasco@b5.biotech.kth.se"
-alias biologin="title \"milou cluster\"; ssh guilc@milou-b.uppmax.uu.se"
-alias nestor-b="title \"Nestor Cluster\"; ssh guilc@nestor1.uppmax.uu.se"
-alias galerina="ssh guillermo.carrasco@galerina.biotech.kth.se"
-alias comicbookguy="ssh guillermo.carrasco@comicbookguy.scilifelab.se"
-alias genologics="title \"Genologics\"; ssh guillermo.carrasco@genologics.scilifelab.se"
-alias genologics-stage="title \"Genologics stage\"; ssh guillermo.carrasco@genologics-stage.scilifelab.se"
-alias tools='title \"Tools\"; ssh guillermo.carrasco@tools.scilifelab.se -p 5912'
-alias tools-dev="title \"Tools (dev)\"; ssh guillermo.carrasco@tools-dev.scilifelab.se"
-alias nas1="title \"NAS 1\"; ssh guillermo.carrasco@seq-nas-1.scilifelab.se"
-alias nas2="title \"NAS 2\"; ssh guillermo.carrasco@seq-nas-2.scilifelab.se"
-alias nas3="title \"NAS 3\"; ssh guillermo.carrasco@seq-nas-3.scilifelab.se"
-alias nas6="title \"NAS 6\"; ssh guillermo.carrasco@nas-6.scilifelab.se"
-alias nas7="title \"NAS 7\"; ssh guillermo.carrasco@nas-7.scilifelab.se"
-alias nas8="title \"NAS 8\"; ssh guillermo.carrasco@nas-8.scilifelab.se"
-alias nas9="title \"NAS 9\"; ssh guillermo.carrasco@nas-9.scilifelab.se"
-alias clinical1="title \"Clinical NAS 1\"; ssh guillermo.carrasco@clinical-nas-1.scilifelab.se"
-alias clinical2="title \"Clinical NAS 2\"; ssh guillermo.carrasco@clinical-nas-2.scilifelab.se"
-alias preproc1="title \"Peproc 1\"; ssh guillermo.carrasco@preproc1.scilifelab.se"
-alias preproc2="title \"Peproc 2\"; ssh guillermo.carrasco@preproc2.scilifelab.se"
-
+alias cl01="gcarrasco@hn01.tcrc.gla.ac.uk"
+alias cl02="gcarrasco@hn02.tcrc.gla.ac.uk"
 
 ##########################
 ## My aliases/utilities ##
@@ -47,7 +27,7 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
-# Prompt like: (virtualenv) hh:mm:ss cwd (git_branch) ~>
+# Prompt like: (virtualenv) cwd (git_branch) ~>
 PS1=" $GREEN\w$YELLOW\$(parse_git_branch)$NO_COLOUR ~> "
 
 alias gpom='git pull origin master'
@@ -55,16 +35,12 @@ alias gPom='git push origin master'
 alias gpum='git pull upstream master'
 
 
-#Vim runtime
-export VIMRUNTIME=/usr/local/Cellar/vim/7.4.273/share/vim/vim74/
+#Vim runtime (MacOSX specific)
+export VIMRUNTIME=/usr/local/Cellar/vim/7.4.712_1/share/vim/vim74/
 
 #Locale stuff
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-#added by Anaconda 1.9.1 installer
-export PATH="/Users/guillem/anaconda/bin:$PATH"
-source activate master &> /dev/null
 
 # Git CLI autocompletion
 if [ -f ~/.git-completion.bash ]; then
@@ -98,3 +74,10 @@ extract () {
   fi
 }
 
+
+# added by Anaconda 2.1.0 installer
+export PATH="/Users/guillem/anaconda/bin:$PATH"
+source activate master &> /dev/null
+
+#Pebble SDK path
+export PATH=$PATH:/Users/guillem/pebble-dev/PebbleSDK-2.9/bin
