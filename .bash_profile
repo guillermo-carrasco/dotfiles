@@ -9,8 +9,8 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 ########################
 
 #Servers
-alias cl01="gcarrasco@hn01.tcrc.gla.ac.uk"
-alias cl02="gcarrasco@hn02.tcrc.gla.ac.uk"
+alias cl01="ssh gcarrasco@hn01.tcrc.gla.ac.uk"
+alias cl02="ssh gcarrasco@hn02.tcrc.gla.ac.uk"
 
 ##########################
 ## My aliases/utilities ##
@@ -81,3 +81,6 @@ source activate master &> /dev/null
 
 #Pebble SDK path
 export PATH=$PATH:/Users/guillem/pebble-dev/PebbleSDK-2.9/bin
+
+#Initialise docker-machine
+alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
