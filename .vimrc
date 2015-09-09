@@ -99,7 +99,7 @@ map <leader>ll :set nu!<cr>
 syntax enable 
 
 set background=dark
-colorscheme grb256
+colorscheme molokai
 let g:rehash256 = 1
 
 "Don't want code folding

@@ -10,7 +10,7 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 
 #Servers
 alias cl01="ssh gcarrasco@hn01.tcrc.gla.ac.uk"
-alias cl02="ssh gcarrasco@hn02.tcrc.gla.ac.uk"
+alias cl02="ssh gcarrasco@hn04.tcrc.gla.ac.uk"
 
 ##########################
 ## My aliases/utilities ##
@@ -36,7 +36,7 @@ alias gpum='git pull upstream master'
 
 
 #Vim runtime (MacOSX specific)
-export VIMRUNTIME=/usr/local/Cellar/vim/7.4.712_1/share/vim/vim74/
+export VIMRUNTIME=/usr/local/Cellar/vim/7.4.826/share/vim/vim74/
 
 #Locale stuff
 export LC_ALL=en_US.UTF-8
@@ -75,7 +75,7 @@ extract () {
 }
 
 
-# added by Anaconda 2.1.0 installer
+# Anaconda installation
 export PATH="/Users/guillem/anaconda/bin:$PATH"
 source activate master &> /dev/null
 
@@ -84,3 +84,4 @@ export PATH=$PATH:/Users/guillem/pebble-dev/PebbleSDK-2.9/bin
 
 #Initialise docker-machine
 alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+
