@@ -85,3 +85,6 @@ export PATH=$PATH:/Users/guillem/pebble-dev/PebbleSDK-2.9/bin
 #Initialise docker-machine
 alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 
+# Tmux 256 colors 
+alias tmux="TERM=screen-256color-bce tmux"
+tmux
