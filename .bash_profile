@@ -9,8 +9,8 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 ########################
 
 #Servers
-alias cl01="ssh gcarrasco@hn01.tcrc.gla.ac.uk"
-alias cl02="ssh gcarrasco@hn04.tcrc.gla.ac.uk"
+alias cl01="mosh gcarrasco@hn01.tcrc.gla.ac.uk"
+alias cl02="mosh gcarrasco@hn03.tcrc.gla.ac.uk"
 
 ##########################
 ## My aliases/utilities ##
@@ -87,4 +87,3 @@ alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/
 
 # Tmux 256 colors 
 alias tmux="TERM=screen-256color-bce tmux"
-tmux
