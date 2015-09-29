@@ -87,3 +87,6 @@ alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/
 
 # Tmux 256 colors 
 alias tmux="TERM=screen-256color-bce tmux"
+
+# Source secret vars
+source ~/.persrc
