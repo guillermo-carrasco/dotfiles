@@ -9,8 +9,8 @@ source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 ########################
 
 #Servers
-alias cl01="mosh gcarrasco@hn01.tcrc.gla.ac.uk"
-alias cl02="mosh gcarrasco@hn03.tcrc.gla.ac.uk"
+alias cl01="ssh gcarrasco@c1l1.tcrc.gla.ac.uk"
+alias cl02="ssh gcarrasco@c2l1.tcrc.gla.ac.uk"
 
 ##########################
 ## My aliases/utilities ##
