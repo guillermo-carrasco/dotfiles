@@ -4,20 +4,11 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Source iterm2 helpers
 source ~/repos_and_code/dotfiles/iterm2_helpers.sh
 
-########################
-## WWCRC aliases ##
-########################
-
-#Servers
-alias cl01="ssh gcarrasco@c1l1.tcrc.gla.ac.uk"
-alias cl02="ssh gcarrasco@c2l1.tcrc.gla.ac.uk"
-
 ##########################
 ## My aliases/utilities ##
 ##########################
 
 #GIT stuff
-
 function parse_git_branch () {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -79,14 +70,14 @@ extract () {
 export PATH="/Users/guillem/anaconda/bin:$PATH"
 source activate master &> /dev/null
 
-#Pebble SDK path
-export PATH=$PATH:/Users/guillem/pebble-dev/PebbleSDK-2.9/bin
-
 #Initialise docker-machine
 alias docker-init="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 
-# Tmux 256 colors 
+# Tmux 256 colors
 alias tmux="TERM=screen-256color-bce tmux"
 
-# Source secret vars
-source ~/.persrc
+# Android hierarchy viewer
+export ANDROID_HVPROTO=ddm
+export ANDROID_HOME=/Users/guillem/Library/Android/sdk
+
+export PATH=$PATH:/Users/guillem/Library/Android/sdk/tools:/Users/guillem/Library/Android/sdk/platform-tools

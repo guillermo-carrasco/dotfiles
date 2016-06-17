@@ -327,7 +327,7 @@ endfunction
 " => Package specific settings 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " You Complete me
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 " Map NerdTree to <F2>(+fn for Macs)
 map <F2> :NERDTreeToggle<CR>
 
@@ -338,7 +338,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
